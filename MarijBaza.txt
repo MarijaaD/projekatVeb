@@ -1,0 +1,27 @@
+create table Tretmani(
+	Id int not null primary key,
+	ImeMusterije nvarchar(50) not null,
+	ImeTretmana nvarchar(50),
+	Trajanje int not null,
+)
+insert into Tretmani values(1,'Marija','Lakiranje Noktiju',45)
+insert into Tretmani values(2,'Ana','Tretman lica',45)
+insert into Tretmani values(3,'Sara','Masaza',90)
+insert into Tretmani values(4,'Ivana','Lakiranje Noktiju',60)
+
+create table Lokacije(
+	Id int not null primary key identity(1,1),
+	Adresa nvarchar(60) not null,
+	OdRadnoVreme int not null,
+	DoRadnoVreme int not null
+)
+insert into Lokacije values('Prvomajska',8,20)
+insert into Lokacije values('Prvomajska',8,20)
+insert into Lokacije values('Prvomajska',8,20)
+insert into Lokacije values('Prvomajska',8,20)
+
+create table Novosti(
+	Id int not null primary key identity(1,1),
+	Ime nvarchar(50) not null,
+	Email nvarchar(50) not null,
+)
