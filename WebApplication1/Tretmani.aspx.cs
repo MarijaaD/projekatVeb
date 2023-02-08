@@ -12,7 +12,7 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            SqlConnection connection = new SqlConnection("Data Source=RELJA;Initial Catalog=marija;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            SqlConnection connection = new SqlConnection("");
 
             try
             {
