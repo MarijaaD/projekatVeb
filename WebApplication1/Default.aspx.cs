@@ -19,7 +19,7 @@ namespace WebApplication1
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            SqlConnection connection = new SqlConnection("Data Source=RELJA;Initial Catalog=marija;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            SqlConnection connection = new SqlConnection("");
 
             string ime = TextBox1.Text;
             string email = TextBox2.Text;
