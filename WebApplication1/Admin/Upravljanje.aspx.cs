@@ -13,7 +13,7 @@ namespace WebApplication1.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            SqlConnection connection = new SqlConnection("Data Source=RELJA;Initial Catalog=marija;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            SqlConnection connection = new SqlConnection("");
 
             try
             {
@@ -29,7 +29,7 @@ namespace WebApplication1.Admin
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            SqlConnection connection = new SqlConnection("Data Source=RELJA;Initial Catalog=marija;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            SqlConnection connection = new SqlConnection("");
 
             int id = int.Parse(TextBox1.Text);
             string ime = TextBox2.Text;
